@@ -8,6 +8,13 @@
     	messagingSenderId: "47334882239"
   	};
   	firebase.initializeApp(config);
+
+    const email=document.getElementById('txtEmail');
+    const pass=document.getElementById('txtPass');
+    const btnLog=document.getElementById('btnLog');
+    const btnReg=document.getElementById('btnReg');
+    const btnSal=document.getElementById('btnSal');
+
   	
 
 } ());
