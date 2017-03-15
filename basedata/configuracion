@@ -1,0 +1,8 @@
+En la Cuenta de FireBase
+ir a DataBase>REGLAS y poner reglas de seguridad:
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
