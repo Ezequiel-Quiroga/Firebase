@@ -13,6 +13,7 @@
   	const ulList=document.getElementById('lista');
   	//referencia al la bd
   	const dbRefObject=firebase.database().ref().child('objeto');
+  	const dbRefList=dbRefObject.child('habilidades');
 
   	//sincronizo cambios de objeto
   	dbRefObject.on('value',snap=> {
