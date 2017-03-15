@@ -22,6 +22,11 @@
   		li.id=snap.key;
   		ulList.appendChild(li);
   	});
+	//si se produce algun cambio lo detecta	
+  	dbRefList.on('child_added',snap=>{
+  		const liChanged=document.createElement('snap.key');
+  		liChanged.innerText=snap.val();
+  	});
 
   	//sincronizo cambios de objeto
   	dbRefObject.on('value',snap=> {
