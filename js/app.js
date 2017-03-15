@@ -18,7 +18,8 @@
   	//sincronizarlos cambios en la lista
   	dbRefList.on('child_added',snap=>{
   		const li=document.createElement('li');
-  		li.innertText=snap.val();
+  		li.innerText=snap.val();
+  		li.id=snap.key;
   		ulList.appendChild(li);
   	});
 
