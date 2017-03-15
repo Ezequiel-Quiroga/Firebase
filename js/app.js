@@ -8,5 +8,6 @@
     	messagingSenderId: "47334882239"
   	};
   	firebase.initializeApp(config);
-
+  	//referencia al objeto
+  	const preObject=document.getElementById('objeto');
 } ()):
