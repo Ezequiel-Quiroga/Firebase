@@ -10,4 +10,7 @@
   	firebase.initializeApp(config);
   	//referencia al objeto
   	const preObject=document.getElementById('objeto');
+
+  	//referencia al la bd
+  	const dbRefObject=firebase.database().ref().child('objeto');
 } ()):
