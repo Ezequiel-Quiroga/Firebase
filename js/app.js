@@ -15,6 +15,13 @@
   	const dbRefObject=firebase.database().ref().child('objeto');
   	const dbRefList=dbRefObject.child('habilidades');
 
+  	//sincronizarlos cambios en la lista
+  	dbRefList.on('child_added',snap=>{
+  		const li=document.createElement('li');
+  		li.innertText=snap.val();
+  		ulList.appendChild(li);
+  	});
+
   	//sincronizo cambios de objeto
   	dbRefObject.on('value',snap=> {
   		preObject.innerText=JSON.stringify(snap.val(),null,3);
