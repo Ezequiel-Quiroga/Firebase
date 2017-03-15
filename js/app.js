@@ -13,4 +13,7 @@
 
   	//referencia al la bd
   	const dbRefObject=firebase.database().ref().child('objeto');
+
+  	//sincronizo cambios de objeto
+  	dbRefObject.on('value',snap=> console.log(snap.val()));
 } ()):
