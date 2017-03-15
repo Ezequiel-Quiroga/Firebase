@@ -7,8 +7,29 @@
 		<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
     <link rel="stylesheet" href="../css/estilo.css">
   </head>
-  <body>  
-    
+  <body> 
+    <div class="w3-row">
+      <div class="w3-col m3 w3-green w3-center"></div>
+      <div class="w3-col m6 w3-center">
+        <div class="w3-center"><br>
+          <img src="https://www.w3schools.com/w3css/img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+        </div>
+
+        <form class="w3-container">
+          <div class="w3-section">
+            <label><b>Usuario</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" placeholder="Enter Email" id="txtEmail" required="" type="text">
+            <label><b>Password</b></label>
+            <input class="w3-input w3-border" placeholder="Enter Password" id="txtPass" required="" type="text">
+            <button class="w3-button  w3-green w3-section w3-padding" id="btnLogin">Login</button>
+            <button class="w3-button  w3-blue w3-section w3-padding" id="btnReg">Registrarse</button>
+            <button class="w3-button  w3-red w3-section w3-padding" id="btnSal">Salir</button>            
+          </div>
+        </form>
+      </div>
+      <div class="w3-col m3 w3-red w3-center"></div>
+    </div> 
+          
 		<script src="../js/autenticacion.js"></script>
 	</body>
 </html>
