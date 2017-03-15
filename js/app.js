@@ -24,8 +24,14 @@
   	});
 	//si se produce algun cambio lo detecta	
   	dbRefList.on('child_added',snap=>{
-  		const liChanged=document.createElement('snap.key');
+  		const liChanged=document.getElementById('snap.key');
   		liChanged.innerText=snap.val();
+  	});
+
+  	//si se produce la eliminacion de un objeto lo detecta	
+  	dbRefList.on('child_added',snap=>{
+  		const liRemoved=document.getElementById('snap.key');
+  		liRemoved.remove();
   	});
 
   	//sincronizo cambios de objeto
