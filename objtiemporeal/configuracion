@@ -1,0 +1,12 @@
+En la Cuenta de FireBase
+1) ir a DataBase>REGLAS y poner reglas de seguridad:
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+2) Creo un valor voy a Datos 
+	Nombre= text
+	Valor= Hola Mundo
