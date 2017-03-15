@@ -20,6 +20,8 @@
   		firebase.initializeApp(config);
   		var cadecera=document.getElementById('Titulo');
   		var dbRef=firebase.database().ref().child('texto');
+
+  		dbRef.on('value',snap=> cabecera.innerText=snap.val());
 		</script>
 	</body>
 </html>
