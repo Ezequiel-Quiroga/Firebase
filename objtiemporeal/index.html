@@ -3,26 +3,11 @@
 	<head>
 		<title>W3.CSS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" href="../css/estilo.css">
 	</head>
-	<body>
-		<h1 id="cabecera"></h1>
+	<body>		
 		<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
-		<script>
-  		// Initialize Firebase
-  		var config = {
-    		apiKey: "AIzaSyAUjAF3rQuu3TtTi3Po7HgmwikeKzhu1os",
-    		authDomain: "appapp-13e8b.firebaseapp.com",
-    		databaseURL: "https://appapp-13e8b.firebaseio.com",
-    		storageBucket: "appapp-13e8b.appspot.com",
-    		messagingSenderId: "47334882239"
-  		};
-  		firebase.initializeApp(config);
-  		var cadecera=document.getElementById('Titulo');
-  		var dbRef=firebase.database().ref().child('texto');
-
-  		dbRef.on('value',snap=> cabecera.innerText=snap.val());
-		</script>
+		<script src="../js/app.js"></script>
 	</body>
 </html>
 
